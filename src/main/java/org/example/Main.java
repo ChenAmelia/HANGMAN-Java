@@ -19,9 +19,6 @@ public class Main {
             underscoreArr[i] = '_';
         }
 
-        //char input = scanner.next().toLowerCase().charAt(0);
-        //char inputSecond = scanner.next().charAt(1);
-
       int life = 8;
 
 
@@ -39,24 +36,14 @@ public class Main {
             System.out.println(underscoreArr);
             System.out.println(life + " life remaining.");
 
-            if(life == 0) {
+            if (life == 0) {
                 System.out.println("Game Over.");
             }
+
+            if (String.valueOf(underscoreArr).equals(guessWord)) {
+                System.out.println("You win!");
+            }
         }
-
-
-//        while(life > 0) {
-//            char input = scanner.next().toLowerCase().charAt(0);
-//            for(int i = 0; i < guessWord.length(); i++) {
-//                if(input == guessWord.charAt(i)) {
-//                    underscoreArr[i] = input;
-//                } else {
-//                    life --;
-//                }
-//            }
-//            System.out.println(underscoreArr);
-//            System.out.println(life + " life remaining.");
-//        }
 
     }
 
